@@ -45,7 +45,7 @@ export default class Home extends React.Component {
 
     Arquivos.update(this.state.id, this.state.arqs);
 
-    let msg = 'Olá, identificamos uma alteração no projeto '+this.state.arqs.descricao+', acesse o link para visualiza-lo -> http://localhost:3000/projects/public/'+this.state.id;
+    let msg = 'Olá, identificamos uma alteração no projeto '+this.state.arqs.descricao+', acesse o link para visualiza-lo -> http://localhost:3000/public/projects/'+this.state.id;
       
       Meteor.call(
         'sendEmail',
